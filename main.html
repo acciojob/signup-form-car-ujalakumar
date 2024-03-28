@@ -7,9 +7,39 @@
 </head>
 
 <body>
+	<form method="get" action="">
+		<label id="name" for="name">Name</label>
+		<input type="text" placeholder="Name" id="name" require><br>
+		<label id="email" for="email">Email</label>
+		<input type="email" placeholder="Email" id="email" require><br>
+		<input type="radio" value="male" name="gender" id="gender_m" require>
+		<label for="male">Male</label><br>
+		<input type="radio" value="female" name="gender" id="gender_f" require>
+		<label for="female">Female</label><br>
+		<label for="multiSelect"></label>
+
+		<select name="multiSelect" id="multiSelect"  paceholder="--Please choose an option--" multiple>
+			<option value="Golden">Golden Retriever</option>
+			<option value="Pomeranian">Pomeranian</option>
+			<option value="Shih">Shih Tzu</option>
+		</select><br>		
+
+		<label for="age">Age</label>
+		<input type="number" placeholder="Age" id="age" require><br>
+		<label for="dob" >DOB</label>
+		<input type="date" id="dob" name="dob" require><br>
+	   <label for="phone">Phone</label>
+		<input type="phone" id="phone" name="phone"><br>		
+		<label for="Pass">Password</label>
+		<input type="Password" id="pass" value="pass" name="pass"><br> 
+		<label for="checkbox">I agree to the TOS</label>
+		<input type="checkbox" id="tos" name="tos" value="tos" require>
+		<br>
+		<input type="submit" value="Submit" id="submit" require>
+	</form>
 	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+	<script type="text/javascript" src="./script.js">
+	</script>
 
 </body>
 
